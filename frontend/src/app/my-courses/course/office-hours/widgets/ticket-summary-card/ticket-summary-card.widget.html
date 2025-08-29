@@ -1,0 +1,43 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+      <div class="column-view">
+        <mat-card-subtitle>{{ ticket.type }}</mat-card-subtitle>
+        <p>Created on {{ ticket.created_at | date: ' MMM dd yyyy' }}</p>
+      </div>
+      <button
+      class="view-button"
+      mat-stroked-button
+      color="secondary"
+      (click)="toggleExpanded()">
+      {{ expanded() ? 'See Less' : 'See More' }}
+    </button>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- <p><span class="semibold-text">Description:</span></p> -->
+      <div class="ticket-section">
+        <h3 class="section-title">Meeting Summary</h3>
+        <p markdown>{{ ticket.meeting_summary }}</p>
+      </div>
+      <div class="ticket-section">
+        <h3 class="section-title">Solutions Used</h3>
+        <p markdown>{{ ticket.solutions_used }}</p>
+      </div>
+      
+
+    </mat-card-content>
+    @if (expanded()) {
+      <mat-card-content>
+        <mat-divider class="spacing-divider" />
+        <div class="row2">
+          <div class="column">
+            <p markdown>{{ ticket.concept_help_description }}</p>
+            <p markdown>{{ ticket.assignment_section_description }}</p>
+            <p markdown>{{ ticket.code_to_english_description }}</p>
+            <p markdown>{{ ticket.concepts_needed_description }}</p>
+            <p markdown>{{ ticket.tactics_tried }}</p>
+          </div>
+        </div>
+      </mat-card-content>
+    }
+  </mat-card>
+  

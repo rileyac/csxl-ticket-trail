@@ -1,0 +1,36 @@
+.similar-tickets-container {
+    padding: 10px;
+    /* background-color: red; */
+}
+
+h1 {
+    padding: 6px;
+}
+.error-message {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* minmax docs: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax*/
+.tickets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 20px;
+    align-items: stretch;
+    padding: 6px;
+    /* background-color: blue; */
+}
+
+app-ticket-summary-card {
+    width: 98%;
+    /* background-color: green; */
+}
+
+/* @media (max-width: 1250px) {
+    app-ticket-summary-card {
+        width: 100%;
+        /* background-color: green; */
+    /* } */
+/* } */

@@ -1,0 +1,23 @@
+<div class="similar-tickets-container">
+    <!-- <h1>Similar Tickets</h1> -->
+
+    @if (error) {
+        <div class="error-message">
+            {{ error }}
+        </div>
+    } @else if (similarTickets.length === 0) {
+        <div class="message">
+            <p>No similar tickets found.</p>
+        </div>
+    } @else {
+        <h1>
+            {{ similarTickets.length }} Similar {{ similarTickets.length === 1 ? 'Ticket' : 'Tickets' }} Found:
+        </h1>
+        <div class="tickets">
+            @for (ticket of similarTickets; track ticket.id) {
+                <app-ticket-summary-card [ticket]="ticket"></app-ticket-summary-card>
+            }
+        </div>
+    }
+
+</div>

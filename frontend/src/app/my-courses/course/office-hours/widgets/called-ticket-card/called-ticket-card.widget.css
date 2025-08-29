@@ -1,0 +1,98 @@
+
+.mat-mdc-card-outlined {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    min-width: 100%;
+}
+
+.mat-mdc-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.column-view {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.view-button {
+    margin-left: auto;
+}
+
+p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.semibold-text {
+    font-weight: 500;
+}
+
+.mat-mdc-card-actions {
+    padding-top: 12px;
+    justify-content: end;
+}
+
+::ng-deep strong, b {
+    font-weight: 500 !important;
+}
+
+.spacing-divider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.spacing-divider-bottom {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    p {
+        margin-bottom: 8px;
+    }
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    gap: 8px;
+
+    p {
+        margin-bottom: 8px;
+    }
+}
+.column {
+    min-width: 33%;
+}
+
+.ta-column {
+    min-width: 67%;
+}
+
+.button-row {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+form {
+    min-width: 100%;
+    column-span: all;
+}
+
+::ng-deep .mat-pane {
+    max-width: 100% !important;
+}
