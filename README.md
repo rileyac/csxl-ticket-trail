@@ -58,9 +58,9 @@ The underlying data model is defined in `backend/entities/office_hours/ticket_en
 
 Returns the created ticket as an OfficeHourTicketOverview.
 
-## ![Alt text](images/ticket_trail/assignment_ticket_start.png)
+## ![Alt text](docs/images/ticket_trail/assignment_ticket_start.png)
 
-## ![Alt text](images/ticket_trail/conceptual_ticket_start.png)
+## ![Alt text](docs/images/ticket_trail/conceptual_ticket_start.png)
 
 ### 2. `PUT /api/office-hours/ticket/{id}/call`
 
@@ -140,7 +140,7 @@ The Called Ticket Card Widget is responsible for displaying and interacting with
 This widget provides both a view of the students’ submitted information and an interface for the TA to record their meeting summary, solutions used, and any concepts the student should review.  
 It also provides a method to navigate to similar past tickets through AI filtering.
 
-## ![Alt text](images/ticket_trail/TA_response_fields.png)
+## ![Alt text](docs/images/ticket_trail/TA_response_fields.png)
 
 ### Behavior
 
@@ -168,7 +168,7 @@ The Ticket Summary Card Widget is responsible for displaying a summarized view o
 This widget shows both the TA’s recorded meeting summary and the solutions used to resolve the ticket.  
 It also provides the ability to reveal additional fields the student originally filled out, by toggling the **See More** button.
 
-## ![Alt text](images/ticket_trail/summar_ticket_card_maximized.png)
+## ![Alt text](docs/images/ticket_trail/summar_ticket_card_maximized.png)
 
 ### Behavior
 
@@ -193,7 +193,7 @@ It instead depends on its parent component, `similar-tickets-page`, to provide i
 The Similar Tickets Page is responsible for displaying a collection of previously closed office hours tickets that are similar to the currently called ticket.  
 This page allows the TA to review past student issues and TA solutions that may help them solve the problem at hand more efficiently.
 
-## ![Alt text](images/ticket_trail/similar_tickets_page.png)
+## ![Alt text](docs/images/ticket_trail/similar_tickets_page.png)
 
 ### Behavior
 
